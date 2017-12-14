@@ -53,11 +53,6 @@
 
 		</table> </center>
 		</br>
-		<form method="post" action="traitement.php">
-		<div align="right">
-			<label>Veuillez entrer l'identifiant de votre commande</label> : <input type="text" name="commande" />
-			<input type="submit" value="Envoyer" />
-		</div> .<p>
-		</form>
+
 		<?php include("footer.php"); ?>
 		</body>
