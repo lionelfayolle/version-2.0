@@ -136,8 +136,7 @@ session_start();
 </br>
     </article>
     </section>
-  </body>
-  <footer>
+
   <?php include("footer.php"); ?>
-  </footer>
+  </body>
 </html>
