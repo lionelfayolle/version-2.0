@@ -19,7 +19,7 @@ session_start();
     <section>
     <center><h1>Accueil</h1></center>
     <article>
-        <h1>Informations</h1><hr>
+        <h1>Informations importantes</h1><hr>
         <p>Identifiant : <br> Nom : <?php echo $_SESSION['nom']?><br> Prénom : <?php echo $_SESSION['prenom']?><br> Adresse : <br> Mail : <?php echo $_SESSION['mail']?></p>
     </article>
 
@@ -136,4 +136,5 @@ session_start();
     </article>
     </section>
     </body>
+  	<?php include("footer.php"); ?>
 </html>

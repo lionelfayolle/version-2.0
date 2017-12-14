@@ -3,6 +3,7 @@
 		<head>
 		<meta charset="UTF-8B" />
 		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="header.css"/>
 		</head>
 
 		<body>
