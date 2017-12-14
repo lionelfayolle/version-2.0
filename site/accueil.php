@@ -10,7 +10,7 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="accueil.css">
+  <link rel="stylesheet" href="accueil2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -59,7 +59,7 @@ session_start();
         ?>
         <div class="container">
 
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ajouter une pièce</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="position:relative;bottom:150px;">Ajouter une pièce</button>
 
 
         <div class="modal fade" id="myModal" role="dialog">
@@ -108,7 +108,7 @@ session_start();
   while ($donnees = $reponse->fetch())
   {
     echo "
-     <tr>
+    <tr>
      <td>".$donnees["reference"]."</td>
      <td>".$donnees["fonction"]."</td>
      </tr>
@@ -119,6 +119,7 @@ session_start();
   $reponse->closeCursor();
 
   ?>
+
   <!-- Modal -->
   <div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -140,7 +141,7 @@ session_start();
   </div>
 </div>
 
-
+</br>
     </article>
     </section>
     <footer>
