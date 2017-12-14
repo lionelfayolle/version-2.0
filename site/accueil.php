@@ -51,7 +51,7 @@ session_start();
         ?>
         <div class="container">
 
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ajouter une pièce</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="position:relative;bottom:150px;">Ajouter une pièce</button>
 
 
         <div class="modal fade" id="myModal" role="dialog">
@@ -100,7 +100,7 @@ session_start();
   while ($donnees = $reponse->fetch())
   {
     echo "
-     <tr>
+    <tr>
      <td>".$donnees["reference"]."</td>
      <td>".$donnees["fonction"]."</td>
      </tr>
@@ -111,6 +111,7 @@ session_start();
   $reponse->closeCursor();
 
   ?>
+
   <!-- Modal -->
   <div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -132,7 +133,7 @@ session_start();
   </div>
 </div>
 
-
+</br>
     </article>
     </section>
   </body>
