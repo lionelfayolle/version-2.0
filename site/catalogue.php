@@ -27,7 +27,7 @@
 		<!-- ici on ajoutera les lignes php pour prendre les commandes de la base de données -->
 		</table> </center>
 		
-		<center> <table>
+		<center> <table cellspacing=20>
 		<caption> <h2> Catégories de capteurs </h2> </caption>
 		<tr>
 		<td>
