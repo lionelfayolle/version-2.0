@@ -3,10 +3,10 @@
 		<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="Categorie_capteurs.css"/>
+		<link rel="stylesheet" href="Categorie_capteur.css"/>
 		<title>Capteurs de consommation d'eau</title>
 		</head>
 		<?php include("header.php"); ?>
 		<body>
-		<?php include("footer.php"); ?>	
+		<?php include("footer.php"); ?>
 		</body>
