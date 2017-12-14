@@ -14,18 +14,10 @@ session_start();
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<?php include("header.php"); ?>
 <body>
-    <header>
-		<img class="headerimg" src="logorond.png">
-		<p><ul class="headerul">
-        <li class= "headerli"><a href="accueil.php" class = "headera">Accueil</a></li>
-        <li class= "headerli"><a href="catalogue.php" class = "headera">Catalogue</a></li>
-        <li class= "headerli"><a href="capteurs.php" class = "headera">Capteurs & Actionneurs</a></li>
-        </ul>
-        </p>
-    </header>
     <section>
-    <center><h1>Accueil iuvui</h1></center>
+    <center><h1>Accueil</h1></center>
     <article>
         <h1>Informations</h1><hr>
         <p>Identifiant : <br> Nom : <?php echo $_SESSION['nom']?><br> Prénom : <?php echo $_SESSION['prenom']?><br> Adresse : <br> Mail : <?php echo $_SESSION['mail']?></p>
@@ -143,9 +135,5 @@ session_start();
 
     </article>
     </section>
-    <footer>
-        <p><center>Adresse : 28 Rue Notre Dame des Champs, 75006 Paris / Téléphone : 01 49 54 52 00 / Mail : domisep@gmail.com</center>
-        </p>
-    </footer>
     </body>
 </html>

@@ -33,7 +33,6 @@ $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
 	<title>Page de connexion</title>
 	<link rel="stylesheet" type="text/css" href="connexion.css">
 </head>
-
 <body>
 
 	<header>
@@ -57,12 +56,12 @@ $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
 				<input type="password" name="password"><br><br>
 				<input type="submit" name="Connexion" value="Connexion">
 	        </form><br>
-			
+
 		</article>
 		<center><aside>
 			<p><strong>Vous n'êtes pas encore inscrits ?</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 			</p>
 		</aside></center><br>
 	</section>
@@ -74,5 +73,3 @@ $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
 </body>
 
 </html>
-
-

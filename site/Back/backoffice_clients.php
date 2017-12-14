@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8B" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width">
 	<title>Back-Office 1</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Bienvenue dans votre Back-Office</h1>
+<?php include("header_bo.php"); ?>
 
 	<table>
 		<caption> <center>
@@ -24,7 +24,7 @@
 			Gestion des comptes uilisateurs
 		</center>
 		<article>
-       
+
         <div class="container">
 
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Créer un compte</button>
@@ -58,17 +58,17 @@
         </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Ajouter</button>
+          <button type="submit" class="btn btn-default" data-dismiss="modal">Ajouter</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-        
+
     </article>
      <br>
     <article>
-       
+
         <div class="container">
   <!-- Trigger the modal with a button -->
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Ajouter un domicile</button>
@@ -105,7 +105,7 @@
     </div>
   </div>
 </div>
-        
+
     </article>
 	</p>
 

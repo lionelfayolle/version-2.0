@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8B" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width">
 	<title>Back-Office commandes</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Bienvenue dans votre Back-Office</h1>
+<?php include("header_bo.php"); ?>
 
 	<table>
 		<caption> <center>

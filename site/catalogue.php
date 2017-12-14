@@ -3,20 +3,12 @@
 		<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="Categorie_capteurs.css"/>
+		<link rel="stylesheet" href="Categorie_capteur.css"/>
 		<title>Catégorie de capteurs</title>
 		</head>
-		
+		<?php include("header.php"); ?>
+
 		<body>
-		<header>
-		<img class="headerimg" src="logorond.png">
-		<p><ul class="headerul">
-        <li class= "headerli"><a href="accueil.php" class = "headera">Accueil</a></li>
-        <li class= "headerli"><a href="catalogue.php" class = "headera">Catalogue</a></li>
-        <li class= "headerli"><a href="capteurs.php" class = "headera">Capteurs & Actionneurs</a></li>
-        </ul>
-        </p>  
-    </header>
 		<center> <table>
 		<caption> <h2> Commandes en cours </h2> </caption>
 		<tr>
@@ -26,7 +18,7 @@
 		</tr>
 		<!-- ici on ajoutera les lignes php pour prendre les commandes de la base de données -->
 		</table> </center>
-		
+
 		<center> <table cellspacing=20>
 		<caption> <h2> Catégories de capteurs </h2> </caption>
 		<tr>
@@ -57,8 +49,8 @@
 		<a href="consoelec.php"><img src="consoelec.jpg"height="350" width="350"  alt="Capteur de consommation d'électricité" title="Capteur d'électricité"/></a>
 		</td>
 		</tr>
-		
-		
+
+
 		</table> </center>
 		</br>
 		<form method="post" action="traitement.php">
@@ -67,9 +59,5 @@
 			<input type="submit" value="Envoyer" />
 		</div> .<p>
 		</form>
-		<footer>
-			<p><center>Adresse : 28 Rue Notre Dame des Champs, 75006 Paris / Téléphone : 01 49 54 52 00 / Mail : domisep@gmail.com</center>
-			</p>
-		</footer>
+		<?php include("footer.php"); ?>
 		</body>
-		
