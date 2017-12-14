@@ -1,0 +1,27 @@
+.titre{
+	color: #35B9E1;
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.bouton{
+	background-color: #0784D7;
+	border-radius: 5px;
+	border: solid green 1px;
+	color: white;
+	width: 150px;
+	height: 30px;
+}
+
+input{
+	width: 250px;
+	height: 20px;
+	padding-left: 10px;
+	border-radius: 4px;
+	border: solid black 0.5px;
+}
