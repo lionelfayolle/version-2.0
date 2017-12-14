@@ -25,7 +25,7 @@ session_start();
         </p>
     </header>
     <section>
-    <center><h1>Accueil</h1></center>
+    <center><h1>Accueil iuvui</h1></center>
     <article>
         <h1>Informations</h1><hr>
         <p>Identifiant : <br> Nom : <?php echo $_SESSION['nom']?><br> Prénom : <?php echo $_SESSION['prenom']?><br> Adresse : <br> Mail : <?php echo $_SESSION['mail']?></p>

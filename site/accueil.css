@@ -13,8 +13,8 @@ background-color: #2E8FF5;
 }
 .headerli{
     list-style:none;
-    background-color:#C0F2FF; 
-    padding:15px; margin-right:20px; 
+    background-color:#C0F2FF;
+    padding:15px; margin-right:20px;
     border-radius: 10px;
 }
 .headerimg{
@@ -28,8 +28,8 @@ ul{
 }
 li{
     list-style:none;
-    background-color:#C0F2FF; 
-    padding:15px; margin-right:20px; 
+    background-color:#C0F2FF;
+    padding:15px; margin-right:20px;
     border-radius: 10px;
 }
 img{
@@ -78,7 +78,7 @@ button{
     float: right;
 
 }
-/*attention au hover qui par défaut 
+/*attention au hover qui par défaut
 est bleu et souligné*/
 a:hover{
     text-decoration: none;
