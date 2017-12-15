@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="Categorie_capteurs.css"/>
+		<link rel="shortcut icon" href="logorond.jpg">
 		<title>Catégorie de capteurs</title>
 		</head>
 
