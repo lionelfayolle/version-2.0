@@ -11,8 +11,8 @@
 		<img class="headerimg" src="logorond.png">
 		<p><ul class="headerul">
         <li class= "headerli"><a href="accueil.php" class = "headera">Accueil</a></li>
-        <li class= "headerli"><a href="catalogue.php" class = "headera">Catalogue</a></li>
         <li class= "headerli"><a href="capteurs.php" class = "headera">Capteurs & Actionneurs</a></li>
+				<li class= "headerli"><a href="catalogue.php" class = "headera">Catalogue</a></li>
         </ul>
         </p>
     </header>
