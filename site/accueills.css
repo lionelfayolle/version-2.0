@@ -21,17 +21,6 @@ background-color: #2E8FF5;
     float:left;
     width:100px;
 }
-ul{
-    position:relative;
-    top:25px;
-    display: flex;
-}
-li{
-    list-style:none;
-    background-color:#C0F2FF;
-    padding:15px; margin-right:20px;
-    border-radius: 10px;
-}
 img{
     float:left;
     width:100px;
@@ -53,13 +42,13 @@ hr{
 article{
     background-color: #3F5378;
     width:98%;
-    height:220px;
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     color: white;
+    overflow: auto;
 }
 .ajouter{
     position:relative;
@@ -84,4 +73,8 @@ est bleu et souligné*/
 a:hover{
     text-decoration: none;
     color:black;
+}
+.black{
+  color: black;
+
 }

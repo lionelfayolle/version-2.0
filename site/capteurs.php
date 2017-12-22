@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -9,14 +13,42 @@
 		<?php include("header.php"); ?>
 
 		<body>
+
 	<h2> <center> Vos capteurs et actionneurs </center> <h2>
-	<center> <table>
-	<tr>
-	<th>Nom du capteur </th>
-	<th>Dernière valeur relevée </th>
-	<th>Moyenne des valeurs relevées hier </th>
-	</tr>
-	</table> </center>
+		<center><?php
+		try
+		{
+			$bdd = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
+		}
+		catch(Exception $e)
+		{
+						die('Erreur : '.$e->getMessage());
+		}
+
+		$reponse = $bdd->query('SELECT reference, fonction FROM capteur ORDER BY fonction');
+
+
+
+
+		echo "<table border=1>
+	  <tr>
+	    <td> Fonction </td>
+	    <td> Réference </td>
+			<td> Valeur </td>
+	  </tr>
+	  ";
+	  while ($donnees = $reponse->fetch())
+	  {
+	    echo "
+	    <tr>
+	     <td>".$donnees["fonction"]."</td>
+	     <td>".$donnees["reference"]."</td>
+	     </tr>
+	     ";
+	  }
+	  echo "</table>"; ?>
+
+	</center>
 
 	<form method="post" action="traitement.php">
 	<center><p>

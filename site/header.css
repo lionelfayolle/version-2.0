@@ -8,3 +8,7 @@ header{
     border-radius: 10px;
     text-decoration: none;
 }
+
+:last-child{
+  text-align: left;
+}

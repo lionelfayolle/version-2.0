@@ -8,7 +8,7 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$req = $bdd->prepare('INSERT INTO capteur2 (reference, fonction) VALUES (?, ?)');
+$req = $bdd->prepare('INSERT INTO capteur (reference, fonction) VALUES (?, ?)');
 $req -> execute(array($_POST['reference'], $_POST['type']));
 header('Location: accueil.php');
 ?>

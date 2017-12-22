@@ -8,7 +8,7 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$req = $bdd->prepare('INSERT INTO piece2 (nom_piece, surface) VALUES (?, ?)');
+$req = $bdd->prepare('INSERT INTO piece (nom_piece, surface) VALUES (?, ?)');
 $req -> execute(array($_POST['nompiece'], $_POST['superficie']));
 header('Location: accueil.php');
 ?>

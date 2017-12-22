@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-		<meta charset="UTF-8B" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="header.css"/>
 		</head>
@@ -13,7 +13,9 @@
         <li class= "headerli"><a href="accueil.php" class = "headera">Accueil</a></li>
         <li class= "headerli"><a href="capteurs.php" class = "headera">Capteurs & Actionneurs</a></li>
 				<li class= "headerli"><a href="catalogue.php" class = "headera">Catalogue</a></li>
+				<li class= "headerli"><a href="deconnexion.php" class = "headera">Déconnexion</a></li>
         </ul>
-        </p>
+
+    </p>
     </header>
 		</body>

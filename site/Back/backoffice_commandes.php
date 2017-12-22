@@ -12,13 +12,39 @@
 <body>
 <?php include("header_bo.php"); ?>
 
-	<table>
-		<caption> <center>
-			Liste des commandes en cours
-		</center></caption>
-		<!-- mettre ici un tableau avec tous les comptes utilisateurs -->
+<?php /*
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+				die('Erreur : '.$e->getMessage());
+}
 
-	</table>
+$reponse = $bdd->query('SELECT le nom d'utilisateur, le modèle et la date de commande FROM commandes ORDER BY date');
+
+
+
+
+echo "<table border=1>
+<tr>
+	<td> nom d'utilisateur </td>
+	<td> le modèle </td>
+	<td> la date de commande </td>
+</tr>
+";
+while ($donnees = $reponse->fetch())
+{
+	echo "
+	<tr>
+	 <td>".$donnees["nom d'utilisateur"]."</td>
+	 <td>".$donnees["le modèle"]."</td>
+	 <td>".$donnees["la date de commande"]."</td>
+	 </tr>
+	 ";
+}
+echo "</table>"; */?>
 
 </body>
 </html>
