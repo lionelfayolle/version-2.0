@@ -1,0 +1,85 @@
+
+td /* Toutes les cellules des tableaux... */
+{
+  background-color: white;
+  border: 3px solid #FF9800;
+  border-radius: 8px;
+
+}
+
+th /* Tous les titres*/
+{
+    border: 1px solid black; /* auront une bordure de 1px */
+	  text-align: center
+}
+body{
+    font-family: Arial;
+}
+header{
+background-color: #2E8FF5;
+    height:100px;
+    border-radius: 10px;
+}
+.headerul{
+    position:relative;
+    top:25px;
+    display: flex;
+}
+.headerli{
+    list-style:none;
+    background-color:#C0F2FF;
+    padding:15px; margin-right:20px;
+    border-radius: 10px;
+}
+.headerimg{
+    float:left;
+    width:100px;
+}
+
+.flotante{
+    float:left;
+}
+.headera{
+    text-decoration: none;
+    color:black;
+}
+footer{
+    position:relative;
+    bottom:5px;
+    background-color: #2E8FF5;
+    border-radius:10px;
+    width:99%;
+    color:white;
+}
+
+.com_en_cours{
+  background-color: #3F5378;
+  border: 3px solid #3F5378;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+}
+p{
+  text-align: center;
+}
+.com_en_cours a:hover{
+    text-decoration: none;
+    color:purple;
+}
+
+.com_en_cours a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.pics {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+body{
+  padding-right: 10px;
+
+}
