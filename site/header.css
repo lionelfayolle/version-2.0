@@ -4,11 +4,30 @@ header{
 .headerli{
     list-style:none;
     background-color:#FF9800;
-    padding:15px; margin-right:20px;
+    padding:15px;
+    margin-right:20px;
     border-radius: 10px;
     text-decoration: none;
+    float: left;
+}
+.leftone {
+  float: left;
+  width: 85%;
+  box-sizing: border-box;
 }
 
-:last-child{
-  text-align: left;
+.rightone {
+  float: right;
+  width: 15%;
+  margin-right: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.headerli1{
+    list-style:none;
+    background-color:#FF9800;
+    padding:15px;
+    border-radius: 10px;
+    text-decoration: none;
+    float: center;
 }
