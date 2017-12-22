@@ -8,7 +8,7 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$req = $bdd->prepare('INSERT INTO utilisateur (Code_utilisateur, Mot_de_passe, Nom, Prenom, Type_utilisateur, mail) VALUES (?, ?, ?, ?, ?, ?)'); //on sélectionne les colonnes dans lesquelles on va éditer
+$req = $bdd->prepare('INSERT INTO utilisateur (Code_utilisateur, Mot_de_passe, Nom, Prenom, Type_utilisateur, mail) VALUES (?, ?, ?, ?, ?, ?)'); //on sélectionne les colonnes dans lesquelles on va éditer, , et permet de les vérifier
 $req -> execute(array($_POST['Code_utilisateur'], $_POST['Mot_de_passe'], $_POST['nom'], $_POST['prenom'], $_POST['Type_utilisateur'],  $_POST['mail'])); // on y met les valeur venant du formulaire
 header('Location: backoffice_clients.php');
 ?>
