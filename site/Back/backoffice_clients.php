@@ -61,7 +61,7 @@ $reponse->closeCursor();
 
         <div class="container">
 
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Créer un compte</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Créer un compte</button> <!-- le bouton pour ajouter un compte, le type de fenetre est le meme que pour les articles -->
 
 
         <div class="modal fade" id="myModal" role="dialog">
@@ -108,7 +108,7 @@ $reponse->closeCursor();
 
         <div class="container">
 
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Supprimer un compte</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Supprimer un compte</button> <!-- le bouton pour supprimer un compte -->
 
 
         <div class="modal fade" id="myModal3" role="dialog">
@@ -143,7 +143,7 @@ $reponse->closeCursor();
 	</p>
 	<center>
 
-		<h1> Appartements actuellement référencés </h1>
+		<h1> Appartements actuellement référencés </h1> <!-- table de référencement des appartements -->
 
 	<?php
 	// Connexion à la base de données
@@ -169,7 +169,7 @@ $reponse->closeCursor();
 
 	</tr>
 	"; // en tete du tableau
-	while ($donnees = $reponse->fetch()) // "quand il y a des données à inclure"
+	while ($donnees = $reponse->fetch()) // quand il y a des données à inclure
 	{
 		echo "
 		<tr>
@@ -193,7 +193,7 @@ $reponse->closeCursor();
 
 			<div class="container">
 <!-- Trigger the modal with a button -->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Ajouter un domicile</button>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Ajouter un domicile</button> <!-- bouton d'ouverture de fenetre modale, ajout de domicile -->
 
 <!-- Modal -->
 			<div class="modal fade" id="myModal2" role="dialog">
@@ -237,7 +237,7 @@ $reponse->closeCursor();
 
 			<div class="container">
 
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Supprimer un logement</button>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Supprimer un domicile</button> <!-- bouton d'ouverture de fenetre modale, suppression de domicile -->
 
 
 			<div class="modal fade" id="myModal4" role="dialog">
@@ -247,7 +247,7 @@ $reponse->closeCursor();
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title">Supprimer un logement</h4>
 					</div>
-			<form  method="post" action="del_clients.php">
+			<form  method="post" action="del_home.php">
 			<div class="modal-body">
 			<p>
 				Entrez le code du logement à supprimer:

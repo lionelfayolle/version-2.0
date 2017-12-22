@@ -24,7 +24,7 @@
 		die('Erreur : '.$e->getMessage());
 	}
 
-	$reponse = $bdd->query('SELECT idPannes, Date, Type_de_panne, Devices_idDevices FROM pannes ORDER BY Date');
+	$reponse = $bdd->query('SELECT idPannes, Date, Type_de_panne, Devices_idDevices FROM pannes ORDER BY Date'); // sélection des données dans la BDD pour inclusion dans le tableau
 
 	echo "<table border=1>
 	<tr>
@@ -46,7 +46,7 @@
 	     </tr>
 	     	";
 	}
-	echo "</table>";
+	echo "</table>"; // fermeture du tableau
 ?>
 </center>
 		</article>

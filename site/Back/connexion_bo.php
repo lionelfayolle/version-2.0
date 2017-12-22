@@ -4,7 +4,7 @@ $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
 	$entrees=$bdd->query("SELECT * FROM administrateur"); //on se place dans la table admiistrateur de la BDD
 		if(false==empty($_POST)) //Si le champ d'entrée n'est pas vide
 		{
-			$post_username = $_POST['ID']; //On associe la valeur ntrée à $post_username
+			$post_username = $_POST['ID']; //On associe la valeur entrée à $post_username
 			$post_password = $_POST['password'];
 			while ($ligne = $entrees -> fetch())
 			{

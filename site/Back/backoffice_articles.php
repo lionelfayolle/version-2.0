@@ -75,7 +75,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Ajouter un article</h4>
             </div>
-        <div class="modal-body">
+        <div class="modal-body"> <!-- Ouverture de la fenetre modale -->
         <p>
         	Entrez les informations sur le nouvel article
             <br>
@@ -110,12 +110,12 @@
 
 						<input type="text" placeholder="Surface couverte" name="surface_couverte">
             <br>
-						<input type="submit" value = "Ajouter">
+						<input type="submit" value = "Ajouter"> <!-- le bouton doit être dans la fenetre modale -->
         </p>
 
         </div>
         <div class="modal-footer">
-          <input type="buttton" class="btn btn-default" data-dismiss="modal" value = "Fermer">
+          <input type="buttton" class="btn btn-default" data-dismiss="modal" value = "Fermer"> <!-- Ce bouton ne permet pas de submit correctement -->
         </div>
 
       </div>
@@ -129,7 +129,7 @@
 
 			<div class="container">
 
-				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Supprimer un article</button>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Supprimer un article</button> <!-- Même type de bouton pour la suppression d'article -->
 
 					<div class="modal fade" id="myModal2" role="dialog">
 							<div class="modal-dialog modal-lg">
