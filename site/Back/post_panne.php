@@ -13,4 +13,8 @@ $req = $bdd->prepare('INSERT INTO pannes (idPannes, Date, Type_de_panne, Cout_oc
 $req -> execute(array($_POST['idPannes'], $_POST['Date'], $_POST['Type_de_panne'], $_POST['Cout_ocasionne'], $_POST['Devices_idDevices'])); // on y met les valeur venant du formulaire
 header('Location: backoffice_pannes.php');
 echo "2";
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> a989d84291ea3f1667ec519ef210c22983bbb0fa

@@ -9,7 +9,11 @@ session_start();
 	<meta name="viewport" content="width=device-width">
 	<title>Pannes</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<<<<<<< HEAD
 	<link rel="stylesheet" type="text/css" href="tableau_bo2.css">
+=======
+	<link rel="stylesheet" type="text/css" href="backoffice_pannes.css">
+>>>>>>> a989d84291ea3f1667ec519ef210c22983bbb0fa
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -57,6 +61,55 @@ session_start();
 	echo "</table>"; // fermeture du tableau
 ?>
 <p>
+<<<<<<< HEAD
+=======
+
+
+<article>
+<div class="container">
+<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Nouvelle panne</button> <!-- bouton d'ouverture de fenetre modale, ajout de domicile -->
+
+<!-- Modal -->
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Panne</h4>
+						</div>
+						<form  method="post" action="post_panne.php">
+							<div class="modal-body">
+									<p>
+									Entrez les informations sur la nouvelle panne
+									<br>
+									<input type="number" placeholder="idPannes" name ="idPannes">
+									<br>
+									<input type="date" placeholder="Date" name="Date">
+									<br>
+									<select name="Type_de_panne" >
+           							<option value="surcharge">Surcharge</option>
+           							<option value="surchauffe">Surchauffe</option>
+           							<option value="degats_des_eaux">Dégats des eaux</option>
+           							</select>
+									<br>
+									<input type="number" placeholder="Coût occasionné" name="Cout_ocasionne">
+									<br>
+									<input type="number" placeholder="idDevices" name="Devices_idDevices">
+									<br>
+									<input type="submit" value = "Ajouter">
+							</div>
+						<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+						</div>
+					</form>
+			</div>
+	</div>
+</div>
+</div>
+
+	</article>
+>>>>>>> a989d84291ea3f1667ec519ef210c22983bbb0fa
 </center>
 
 <article>
