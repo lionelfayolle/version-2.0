@@ -1,0 +1,8 @@
+body{
+    font-family: Arial;
+    font-size:20px;
+    background-image:url(bg.jpg);
+    background-size:cover;
+    box-sizing:border-box;
+    min-height:100vh;  
+}
