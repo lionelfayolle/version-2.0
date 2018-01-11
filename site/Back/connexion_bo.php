@@ -1,14 +1,14 @@
 <?php
 $error_message='';
 $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
-	$entrees=$bdd->query("SELECT * FROM administrateur"); //on se place dans la table admiistrateur de la BDD
+	$entrees=$bdd->query("SELECT * FROM utilisateur"); //on se place dans la table admiistrateur de la BDD
 		if(false==empty($_POST)) //Si le champ d'entrée n'est pas vide
 		{
 			$post_username = $_POST['ID']; //On associe la valeur entrée à $post_username
 			$post_password = $_POST['password'];
 			while ($ligne = $entrees -> fetch())
 			{
-				if($post_username==$ligne["identifiant"] & $post_password==$ligne["mdp"]) //Si l'identifiant et le mdp correspondent
+				if($post_username==$ligne["Code_utilisateur"] & $post_password==$ligne["Mot_de_passe"] & $ligne["Type_utilisateur"]== "Administrateur") //Si l'identifiant et le mdp correspondent
 				{
 						session_start(); //on démarre la session
 						$_SESSION['nom'] = $ligne["nom"];
@@ -46,5 +46,7 @@ $bdd = new PDO("mysql:host=localhost; dbname=mydb; charset=utf8","root","");
 		<input type="password" name="password" placeholder="Mot de passe"><br> <br>
 		<input type="submit" name="bouton" class="bouton" value="Se connecter" >
 	</form></center>
+
+
 </body>
 </html>

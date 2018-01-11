@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Back-Office catalogue</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="backoffice_1.css">
+	<link rel="stylesheet" type="text/css" href="tableau_bo2.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- inclure les fenetres modales -->
 </head>
@@ -31,13 +35,13 @@
 
   echo "<table border=1>
   <tr>
-    <td> reference_produit </td>
-		<td> nom_du_device </td>
-    <td> prix </td>
-		<td> identification</td>
-		<td> fonction</td>
+    <td> Référence </td>
+		<td> Nom </td>
+    <td> Prix </td>
+		<td> Identification</td>
+		<td> Fonction</td>
 		<td> unite</td>
-		<td> surface_couverte </td>
+		<td> Surface couverte </td>
   </tr>
   "; // en tete du tableau
   while ($donnees = $reponse->fetch()) // quand il y a des données à inclure, on crée une nouvelle case et la remplie
@@ -50,7 +54,7 @@
 		 <td>".$donnees["identification"]."</td>
 		 <td>".$donnees["fonction"]."</td>
 		 <td>".$donnees["unite"]."</td>
-     <td>".$donnees["surface_couverte"]."</td>
+     <td>".$donnees["surface_couverte"]." m²</td>
      </tr>
      "; // on met les données dans les cases une par une
   }
@@ -80,13 +84,13 @@
         	Entrez les informations sur le nouvel article
             <br>
 
-            <input type="text" placeholder="Référence produit" name="reference_produit">
+            <input type="number" placeholder="Référence produit" name="reference_produit">
             <br>
 
             <input type="text" placeholder="Nom" name = "nom_du_device">
             <br>
 
-            <input type="text" placeholder="Prix" name = "prix">
+            <input type="number" placeholder="Prix" name = "prix">
             <br>
 
             <select name = "identification">
@@ -108,7 +112,7 @@
 						<input type="text" placeholder="unité" name="unite">
             <br>
 
-						<input type="text" placeholder="Surface couverte" name="surface_couverte">
+						<input type="number" placeholder="Surface couverte en m²" name="surface_couverte">
             <br>
 						<input type="submit" value = "Ajouter"> <!-- le bouton doit être dans la fenetre modale -->
         </p>
@@ -124,7 +128,7 @@
 </form>
 </div>
     </article>
-	</p>
+<br>
 	<article>
 
 			<div class="container">
@@ -144,7 +148,7 @@
 												<p>
 														Entrez la référence de l'article à supprimer
 														<br>
-														<input type="text" placeholder="Référence produit" name="reference_del">
+														<input type="number" placeholder="Référence produit" name="reference_del">
 														<input type="submit" value = "Supprimer">
 
 												</p>
@@ -161,9 +165,7 @@
 
 			</div>
 	</article>
-
-
-
+</p>
 
 </body>
 </html>

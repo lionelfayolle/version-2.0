@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +9,24 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Back-Office 1</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="backoffice_1.css">
+	<link rel="stylesheet" type="text/css" href="tableau_bo2.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <?php include("header_bo.php"); ?>
+
+	<ul class="follow_icon">
+          <li><a href="#" style="opacity: 1;"><img src="facebook.png" alt=""/></a></li>
+          <li><a href="#" style="opacity: 1;"><img src="google.png" alt=""/></a></li>
+          <li><a href="#" style="opacity: 1;"><img src="twitter.png" alt=""/></a></li>
+          <li><a href="#" style="opacity: 1;"><img src="feed.png" alt=""/></a></li>
+      </ul>
+			<br>
 <center>
+
 	<h1> Gestion des comptes utilisateurs </h1>
+
 <?php
 // Connexion à la base de données
 try
@@ -28,11 +42,11 @@ $reponse = $bdd->query('SELECT Code_utilisateur, Mot_de_passe, Nom, Prenom,Type_
 
 echo "<table border=1>
 <tr>
-	<td> Code_utilisateur </td>
+	<td> Numero utilisateur </td>
 	<td> Nom </td>
 	<td> Prénom </td>
 	<td> Type d'utilisateur </td>
-	<td> mail </td>
+	<td> Mail </td>
 </tr>
 ";
 while ($donnees = $reponse->fetch())
@@ -76,7 +90,7 @@ $reponse->closeCursor();
         <p>
         	Entrez les informations sur nouvel utilisateur
             <br>
-            <input type="text" placeholder="Code de l'utilisateur" name="Code_utilisateur">
+            <input type="number" placeholder="Code de l'utilisateur" name="Code_utilisateur">
             <br>
             <input type="text" placeholder="Mot de passe initial" name="Mot_de_passe">
             <br>
@@ -89,7 +103,7 @@ $reponse->closeCursor();
             <br>
             <input type="text" placeholder="Prénom" name= "prenom">
             <br>
-            <input type="text" placeholder="Adresse mail" name="mail">
+            <input type="email" placeholder="Adresse mail" name="mail">
 						<input type="submit" value = "Ajouter">
         </p>
         </div>
@@ -123,7 +137,7 @@ $reponse->closeCursor();
         <p>
         	Entrez le code de l'utilisateur à effacer:
             <br>
-            <input type="text" placeholder="Code de l'utilisateur" name="Code_utilisateur">
+            <input type="number" placeholder="Code de l'utilisateur" name="Code_utilisateur">
 
 						<input type="submit" value = "Supprimer">
         </p>
@@ -208,9 +222,9 @@ $reponse->closeCursor();
 									<p>
 									Entrez les informations sur le nouveau domicile
 									<br>
-									<input type="text" placeholder="Code appartement" name ="Code_appartement">
+									<input type="number" placeholder="Code appartement" name ="Code_appartement">
 									<br>
-									<input type="text" placeholder="Numéro" name="num_de_rue">
+									<input type="number" placeholder="Numéro" name="num_de_rue">
 									<br>
 									<input type="text" placeholder="Nom de rue" name="nom_de_rue">
 									<br>
@@ -218,7 +232,7 @@ $reponse->closeCursor();
 									<br>
 									<input type="text" placeholder="Code postal" name="Code_postal">
 									<br>
-									<input type="text" placeholder="Code propriétaire" name="Utilisateur_Code_utilisateur">
+									<input type="number" placeholder="Code propriétaire" name="Utilisateur_Code_utilisateur">
 									<br>
 									<input type="submit" value = "Ajouter">
 							</div>
@@ -243,30 +257,30 @@ $reponse->closeCursor();
 			<div class="modal fade" id="myModal4" role="dialog">
 					<div class="modal-dialog modal-lg">
 							<div class="modal-content">
-							<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Supprimer un logement</h4>
-					</div>
-			<form  method="post" action="del_home.php">
-			<div class="modal-body">
-			<p>
-				Entrez le code du logement à supprimer:
-					<br>
-					<input type="text" placeholder="Code du logement" name="Code_appartement">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Supprimer un logement</h4>
+								</div>
+								<form  method="post" action="del_home.php">
+									<div class="modal-body">
+										<p>
+											Entrez le code du logement à supprimer:
+											<br>
+											<input type="number" placeholder="Code du logement" name="Code_appartement">
 
-					<input type="submit" value = "Supprimer">
-			</p>
-			</div>
-			<div class="modal-footer">
-				<button type="submit" class="btn btn-default" data-dismiss="modal">Fermer</button>
-			</div>
-		</form>
-		</div>
-	</div>
-</div>
+											<input type="submit" value = "Supprimer">
+										</p>
+									</div>
+									<div class="modal-footer">
+											<button type="submit" class="btn btn-default" data-dismiss="modal">Fermer</button>
+									</div>
+								</form>
+							</div>
+						</div>
+				</div>
 </div>
 
 	</article>
-
+<br>
 </body>
 </html>
